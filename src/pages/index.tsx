@@ -1,10 +1,11 @@
-let a = 'hello';
-let c = 5;
+import { Fragment } from 'react';
+import { HomeView } from '@/views/HomeView';
+
 const HomePage = () => {
   return (
-    <div>
-      <div>Homepage</div>
-    </div>
+    <Fragment>
+      <HomeView />
+    </Fragment>
   );
 };
 
