@@ -1,0 +1,17 @@
+.mainLayout {
+  min-height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    padding: 10px 0;
+  }
+  .main {
+    flex-grow: 1;
+    border: 1px solid blue;
+  }
+  .footer {
+    padding: 10px 0;
+  }
+}
