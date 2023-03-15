@@ -5,16 +5,21 @@ interface IMainLayout {
 }
 
 import styles from './Layout.module.scss';
+import { Container } from '@/components/Container';
 
 export const MainLayout: FC<IMainLayout> = ({ children }) => {
   return (
     <div className={styles.mainLayout}>
       <header className={styles.header}>
-        <h2>Header</h2>
+        <Container>
+          <h2>Header</h2>
+        </Container>
       </header>
       <main className={styles.main}>{children}</main>
       <footer className={styles.footer}>
-        <h2>Footer</h2>
+        <Container>
+          <h2>Footer</h2>
+        </Container>
       </footer>
     </div>
   );
