@@ -7,6 +7,7 @@ import { BannerItem } from './BannerItem';
 
 import 'swiper/css';
 import styles from './HomeBanner.module.scss';
+import { useUpdate } from 'react-use';
 
 const bannerData = [
   {
@@ -37,6 +38,7 @@ const bannerData = [
 ];
 
 export const HomeBanner = () => {
+  const update = useUpdate();
   const navigationPrevRef = useRef<HTMLButtonElement>(null);
   const navigationNextRef = useRef<HTMLButtonElement>(null);
 
@@ -46,6 +48,7 @@ export const HomeBanner = () => {
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={10}
         loop={true}
+        onBeforeInit={update}
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
@@ -55,7 +58,7 @@ export const HomeBanner = () => {
           nextEl: navigationNextRef.current,
         }}
         slidesPerView={1}
-        onBeforeInit={swiper => {
+        onSwiper={swiper => {
           //@ts-ignore
           swiper.params.navigation.prevEl = navigationPrevRef.current;
           //@ts-ignore
