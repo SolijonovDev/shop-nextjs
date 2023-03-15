@@ -10,9 +10,10 @@
 
   .main {
     flex-grow: 1;
-    border: 1px solid blue;
   }
+
   .footer {
     padding: 10px 0;
+    border-top: 1px solid black;
   }
 }

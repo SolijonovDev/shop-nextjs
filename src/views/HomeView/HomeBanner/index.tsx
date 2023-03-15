@@ -1,13 +1,13 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper';
+import { useUpdate } from 'react-use';
 
 import { Container } from '@/components/Container';
 import { BannerItem } from './BannerItem';
 
 import 'swiper/css';
 import styles from './HomeBanner.module.scss';
-import { useUpdate } from 'react-use';
 
 const bannerData = [
   {
@@ -59,7 +59,7 @@ export const HomeBanner = () => {
         }}
         slidesPerView={1}
         onSwiper={swiper => {
-          //@ts-ignore
+          // @ts-ignore
           swiper.params.navigation.prevEl = navigationPrevRef.current;
           //@ts-ignore
           swiper.params.navigation.nextEl = navigationNextRef.current;

@@ -1,30 +1,31 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 
-interface IMainLayout {
-  children: ReactNode;
-}
-
-import styles from './Layout.module.scss';
 import { Container } from '@/components/Container';
+import { Text } from '@/components/Text';
 
-export const MainLayout: FC<IMainLayout> = ({ children }) => {
+import { ILayoutProps } from './Layout.type';
+import styles from './Layout.module.scss';
+
+export const MainLayout: FC<ILayoutProps> = ({ children }) => {
   return (
     <div className={styles.mainLayout}>
       <header className={styles.header}>
         <Container>
-          <h2>Header</h2>
+          <Text as="h3">Header</Text>
         </Container>
       </header>
       <main className={styles.main}>{children}</main>
       <footer className={styles.footer}>
         <Container>
-          <h2>Footer</h2>
-          <p>
+          <Text as="h4" align="center">
+            Footer
+          </Text>
+          <Text as="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illum, explicabo
             veritatis nihil praesentium saepe velit sed repellat, incidunt tempora voluptates. Neque
             minus id laudantium, veniam fuga esse officiis excepturi illo amet, fugiat iure, ad
             tenetur cumque vel.
-          </p>
+          </Text>
         </Container>
       </footer>
     </div>
