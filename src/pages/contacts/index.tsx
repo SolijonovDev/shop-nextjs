@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import { ContactView } from '@/views/ContactView';
 
 const ContactPage = () => {
-  return <div>ContactPage</div>;
+  return (
+    <Fragment>
+      <ContactView />
+    </Fragment>
+  );
 };
 
 export default ContactPage;

@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import { CatalogView } from '@/views/CatalogView';
 
 const CatalogPage = () => {
-  return <div>CatalogPage</div>;
+  return (
+    <Fragment>
+      <CatalogView />
+    </Fragment>
+  );
 };
 
 export default CatalogPage;

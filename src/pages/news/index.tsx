@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import { NewsView } from '@/views/NewsView';
 
 const NewsPage = () => {
-  return <div>NewsPage</div>;
+  return (
+    <Fragment>
+      <NewsView />
+    </Fragment>
+  );
 };
 
 export default NewsPage;
