@@ -1,0 +1,36 @@
+.detailsView {
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .imgContainer {
+    flex-grow: 1;
+  }
+
+  .infos {
+    flex-grow: 3;
+    padding: 20px 0;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .infos {
+    padding-left: 20px;
+  }
+
+  .productName {
+    margin-bottom: 20px;
+  }
+
+  .productPrice,
+  .status {
+    margin-bottom: 15px;
+  }
+}
