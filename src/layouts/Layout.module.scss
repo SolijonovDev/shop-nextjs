@@ -4,12 +4,9 @@
   flex-direction: column;
   min-width: 320px;
 
-  .header {
-    padding: 10px 0;
-  }
-
   .main {
     flex-grow: 1;
+    background-color: #f4f7fd;
   }
 
   .footer {

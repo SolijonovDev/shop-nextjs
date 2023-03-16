@@ -5,6 +5,7 @@ import { useUpdate } from 'react-use';
 
 import { Container } from '@/components/Container';
 import { BannerItem } from './BannerItem';
+import { Button } from '@/components/Button';
 
 import 'swiper/css';
 import styles from './HomeBanner.module.scss';
@@ -75,12 +76,12 @@ export const HomeBanner = () => {
       </Swiper>
       <div className={styles.controls}>
         <Container>
-          <button className={styles.btn} ref={navigationPrevRef}>
+          <Button className={styles.btn} ref={navigationPrevRef}>
             Prev
-          </button>
-          <button className={styles.btn} ref={navigationNextRef}>
+          </Button>
+          <Button className={styles.btn} ref={navigationNextRef}>
             Next
-          </button>
+          </Button>
         </Container>
       </div>
     </div>

@@ -5,15 +5,12 @@ import { Text } from '@/components/Text';
 
 import { ILayoutProps } from './Layout.type';
 import styles from './Layout.module.scss';
+import { Header } from './Header';
 
 export const MainLayout: FC<ILayoutProps> = ({ children }) => {
   return (
     <div className={styles.mainLayout}>
-      <header className={styles.header}>
-        <Container>
-          <Text as="h3">Header</Text>
-        </Container>
-      </header>
+      <Header />
       <main className={styles.main}>{children}</main>
       <footer className={styles.footer}>
         <Container>
