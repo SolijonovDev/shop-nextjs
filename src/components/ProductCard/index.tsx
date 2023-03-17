@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 import { Text } from '@/components/Text';
 
-import styles from './ProductCard.module.scss';
 import { IProductCardProps } from './ProductCard.type';
+import styles from './ProductCard.module.scss';
 
 export const ProductCard: FC<IProductCardProps> = ({ item }) => {
   return (

@@ -20,6 +20,8 @@ export const DetailsView = () => {
           <Button>Sotib olish</Button>
         </div>
       </Container>
+      <p>Other customers have also bought</p>
+      <p>Related</p>
     </div>
   );
 };

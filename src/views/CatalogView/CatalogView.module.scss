@@ -1,0 +1,11 @@
+.catalogView {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  .content {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    padding-top: 25px;
+    grid-gap: 40px;
+  }
+}

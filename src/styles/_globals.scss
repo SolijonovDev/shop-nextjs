@@ -19,6 +19,16 @@ a {
   color: inherit;
 }
 
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
