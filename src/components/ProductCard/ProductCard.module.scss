@@ -1,0 +1,21 @@
+.item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 8px;
+
+  .img {
+    width: 100%;
+    height: auto;
+    transition: all 300ms;
+  }
+
+  &:hover .img {
+    transform: scale(1.05);
+  }
+
+  .productName {
+    margin-bottom: 15px;
+  }
+}

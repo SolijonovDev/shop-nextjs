@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Text } from '@/components/Text';
 
 import styles from './Section.module.scss';
+import { ProductCard } from '@/components/ProductCard';
 
 interface ISectionProps {
   title: string;
@@ -43,11 +44,7 @@ export const Section: FC<ISectionProps> = ({ title }) => {
       <Text className={styles.title} as="h3" text={title} />
       <div className={styles.items}>
         {sectionItems.map(item => (
-          <Link href="/details/7118" key={item.id} className={styles.item}>
-            <img className={styles.img} src={item.src} alt={item.name} />
-            <Text as="p" className={styles.productName} align="left" text={item.name} />
-            <Text as="p" align="left" text={"6 800 000 so'm"} />
-          </Link>
+          <ProductCard key={item.id} item={item} />
         ))}
       </div>
     </div>
