@@ -1,0 +1,43 @@
+.newsView {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+
+  .blog {
+    box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .blogContent {
+    padding: 10px;
+  }
+
+  .blogViews {
+    margin-left: 15px;
+  }
+
+  .blogTitle {
+    margin-bottom: 10px;
+  }
+
+  .date {
+    display: flex;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+}
