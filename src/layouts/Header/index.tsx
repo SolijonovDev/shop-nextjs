@@ -2,10 +2,33 @@ import React from 'react';
 import Link from 'next/link';
 
 import { Container } from '@/components/Container';
-import { Text } from '@/components/Text';
 import { Button } from '@/components/Button';
 
 import styles from './Header.module.scss';
+
+const menuItems = [
+  { id: 1, name: 'Catalog', pathName: '/catalog' },
+  {
+    id: 2,
+    name: 'Yangiliklar',
+    pathName: '/news',
+  },
+  {
+    id: 3,
+    name: 'Aloqa',
+    pathName: '/contacts',
+  },
+  {
+    id: 4,
+    name: 'Tanlanganlar',
+    pathName: '/favorites',
+  },
+  {
+    id: 5,
+    name: 'Savatcha',
+    pathName: '/basket',
+  },
+];
 
 export const Header = () => {
   return (
@@ -17,21 +40,13 @@ export const Header = () => {
           </Link>
         </div>
         <ul className={styles.menu}>
-          <li className={styles.menuItem}>
-            <Link className={styles.menuItemLink} href="/catalog">
-              Catalog
-            </Link>
-          </li>
-          <li className={styles.menuItem}>
-            <Link className={styles.menuItemLink} href="/news">
-              Новости
-            </Link>
-          </li>
-          <li className={styles.menuItem}>
-            <Link className={styles.menuItemLink} href="/contacts">
-              Контакты
-            </Link>
-          </li>
+          {menuItems.map(({ id, name, pathName }) => (
+            <li className={styles.menuItem} key={id}>
+              <Link className={styles.menuItemLink} href={pathName}>
+                {name}
+              </Link>
+            </li>
+          ))}
         </ul>
         <div className={styles.leftPanel}>
           <Button>Sign up</Button>
