@@ -3,31 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 import { useUpdate } from 'react-use';
 
-import { Container } from '@/components/Container';
 import { BannerItem } from './BannerItem';
 import { Button } from '@/components/Button';
 
-import 'swiper/css';
 import styles from './HomeBanner.module.scss';
-
-const bannerData = [
-  {
-    id: 1,
-    imgUrl: '	https://images.uzum.uz/cg7c9sng49devoaaf0vg/main_page_banner.jpg',
-  },
-  {
-    id: 2,
-    imgUrl: '	https://images.uzum.uz/cg7hqbnhj8j9g699qoag/main_page_banner.jpg',
-  },
-  {
-    id: 3,
-    imgUrl: '	https://images.uzum.uz/cge4e8fg49devoabek00/main_page_banner.jpg',
-  },
-  {
-    id: 4,
-    imgUrl: 'https://images.uzum.uz/cfv22a7hgiov1qid9m1g/main_page_banner.jpg',
-  },
-];
+import { homeBanners } from '@/fake-data/home-banner';
 
 export const HomeBanner = () => {
   const update = useUpdate();
@@ -57,11 +37,9 @@ export const HomeBanner = () => {
           swiper.params.navigation.nextEl = navigationNextRef.current;
         }}
       >
-        {bannerData.map(banner => (
+        {homeBanners.map(banner => (
           <SwiperSlide key={banner.id}>
-            <BannerItem imgSrc={banner.imgUrl}>
-              <p>{banner.text}</p>
-            </BannerItem>
+            <BannerItem imgSrc={banner.imgUrl} />
           </SwiperSlide>
         ))}
       </Swiper>

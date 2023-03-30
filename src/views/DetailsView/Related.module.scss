@@ -1,0 +1,41 @@
+.related {
+  min-height: 120px;
+  width: 100%;
+  position: relative;
+
+  .title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+    color: #000;
+    z-index: 100000;
+    width: 32px;
+    height: 32px;
+  }
+
+  .previosBtn {
+    left: 20px;
+  }
+
+  .nextBtn {
+    right: 20px;
+  }
+
+  .btn:disabled {
+    visibility: hidden;
+  }
+}

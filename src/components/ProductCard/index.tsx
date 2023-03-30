@@ -16,8 +16,10 @@ export const ProductCard: FC<IProductCardProps> = ({ item }) => {
           alt={item.name}
         />
       </div>
-      <Text as="p" className={styles.productName} align="left" text={item.name} />
-      <Text as="p" align="left" text={"6 800 000 so'm"} />
+      <div className={styles.body}>
+        <Text as="p" className={styles.productName} align="left" text={item.name} />
+        <Text as="p" align="left" text={"6 800 000 so'm"} />
+      </div>
     </Link>
   );
 };

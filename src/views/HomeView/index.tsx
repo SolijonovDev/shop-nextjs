@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 
 import { HomeBanner } from './HomeBanner';
-import { FeaturesPanel } from './Features';
 import { Sections } from './Sections';
 import { Container } from '@/components/Container';
 

@@ -1,11 +1,23 @@
 .footer {
-  padding: 10px 0;
-  background-color: #008dff;
-  padding-top: 42px;
-  padding-bottom: 27px;
-  color: #fff;
+  padding: 20px 0;
+  border-top: 1px solid rgba(118, 121, 127, 0.2);
+  color: #1f1f26;
 
-  .title {
-    margin-bottom: 15px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container div {
+    display: flex;
+  }
+
+  .text {
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 }

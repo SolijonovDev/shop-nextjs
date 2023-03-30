@@ -8,9 +8,14 @@ import styles from './Footer.module.scss';
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Container>
-        <Text as="h4" className={styles.title} text="Online shoppping" align="center" />
-        <Text as="p" text="2020 - 2023 Barcha huquqlar himoyalangan" align="center" />
+      <Container className={styles.container}>
+        <div>
+          <Text as="span" className={styles.text} text="Maxfiylik kelishuvi" />
+          <Text as="span" className={styles.text} text="Foydalanuvchi kelishuvi" />
+        </div>
+        <div>
+          <Text className={styles.text} as="span" text="2023 Barcha huquqlar himoyalangan" />
+        </div>
       </Container>
     </footer>
   );
