@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Container } from '@/components/Container';
 import { Section } from './Section';
 
 import styles from './Sections.module.scss';
@@ -15,11 +14,9 @@ const sections = [
 export const Sections = () => {
   return (
     <div className={styles.sections}>
-      <Container>
-        {sections.map(section => (
-          <Section key={section.id} title={section.title} />
-        ))}
-      </Container>
+      {sections.map(section => (
+        <Section key={section.id} title={section.title} />
+      ))}
     </div>
   );
 };

@@ -1,13 +1,28 @@
-.item {
+.productCard {
   background-color: #fff;
   border-radius: 8px;
   box-sizing: border-box;
   text-align: center;
-  padding: 10px 8px;
+  transition: all 300ms;
+  overflow: hidden;
+  display: block;
+  position: relative;
+
+  .productCardImg {
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 133%;
+    position: relative;
+  }
 
   .img {
-    width: 100%;
-    height: auto;
+    position: absolute;
+    // width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    object-position: center;
+    object-fit: cover;
     transition: all 300ms;
   }
 
