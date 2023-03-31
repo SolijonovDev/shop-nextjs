@@ -5,6 +5,7 @@ import { Container } from '@/components/Container';
 import { Button } from '@/components/Button';
 
 import styles from './Header.module.scss';
+import { useSignIn } from '../SignInProvider';
 
 const menuItems = [
   { id: 1, name: 'Catalog', pathName: '/catalog' },
@@ -31,6 +32,7 @@ const menuItems = [
 ];
 
 export const Header = () => {
+  const { showSignInPopup } = useSignIn();
   return (
     <header className={styles.header}>
       <Container className={styles.container}>
@@ -49,7 +51,7 @@ export const Header = () => {
           ))}
         </ul>
         <div className={styles.leftPanel}>
-          <Button>Sign up</Button>
+          <Button onClick={showSignInPopup}>Sign In</Button>
         </div>
       </Container>
     </header>
