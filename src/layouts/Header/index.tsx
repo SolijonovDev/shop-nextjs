@@ -4,32 +4,10 @@ import Link from 'next/link';
 import { Container } from '@/components/Container';
 import { Button } from '@/components/Button';
 
-import styles from './Header.module.scss';
 import { useSignIn } from '../SignInProvider';
+import { navItems } from '@/config/nav';
 
-const menuItems = [
-  { id: 1, name: 'Catalog', pathName: '/catalog' },
-  {
-    id: 2,
-    name: 'Yangiliklar',
-    pathName: '/news',
-  },
-  {
-    id: 3,
-    name: 'Aloqa',
-    pathName: '/contacts',
-  },
-  {
-    id: 4,
-    name: 'Tanlanganlar',
-    pathName: '/favorites',
-  },
-  {
-    id: 5,
-    name: 'Savatcha',
-    pathName: '/basket',
-  },
-];
+import styles from './Header.module.scss';
 
 export const Header = () => {
   const { showSignInPopup } = useSignIn();
@@ -42,7 +20,7 @@ export const Header = () => {
           </Link>
         </div>
         <ul className={styles.menu}>
-          {menuItems.map(({ id, name, pathName }) => (
+          {navItems.map(({ id, name, pathName }) => (
             <li className={styles.menuItem} key={id}>
               <Link className={styles.menuItemLink} href={pathName}>
                 {name}
