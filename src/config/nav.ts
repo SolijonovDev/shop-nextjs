@@ -1,5 +1,5 @@
 export const navItems = [
-  { id: 1, name: 'Catalog', pathName: '/catalog' },
+  { id: 1, name: 'Category', pathName: '/category' },
   {
     id: 2,
     name: 'Yangiliklar',

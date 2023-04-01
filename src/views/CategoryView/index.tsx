@@ -5,13 +5,16 @@ import { Text } from '@/components/Text';
 import { Sidebar } from './Sidebar';
 import { ContentPanel } from './ContentPanel';
 
-import styles from './CatalogView.module.scss';
+import { Header } from './Header';
 
-export const CatalogView = () => {
+import styles from './CategoryView.module.scss';
+
+export const CategoryView = () => {
   return (
-    <div className={styles.catalogView}>
+    <div className={styles.categoryView}>
       <Container>
         <Text as="p" text="Bread cream" />
+        <Header />
         <div className={styles.content}>
           <Sidebar />
           <ContentPanel />

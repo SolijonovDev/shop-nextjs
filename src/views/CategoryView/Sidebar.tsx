@@ -32,7 +32,8 @@ export const Sidebar: FC = () => {
 
   return (
     <div className={styles.sidebar}>
-        <Text className={styles.title} as="h4" text="Bo'limlar" />
+      <div className={styles.content}>
+        <Text className={styles.title} as="h5" text="Bo'limlar" />
         <ul className={styles.categories}>
           {categories.map(category => (
             <li key={category.id} className={styles.categoryItem}>
@@ -46,5 +47,6 @@ export const Sidebar: FC = () => {
           ))}
         </ul>
       </div>
+    </div>
   );
 };
