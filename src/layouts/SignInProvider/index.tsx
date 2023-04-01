@@ -9,7 +9,7 @@ interface ISignInProviderProps {
 }
 
 export const SignInProvider: FC<ISignInProviderProps> = ({ children }) => {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   const showSignInPopup = () => {
     setOpen(true);
