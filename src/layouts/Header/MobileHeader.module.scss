@@ -1,0 +1,18 @@
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .rightPanel {
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle {
+    margin-right: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-bottom: -2px;
+  }
+}

@@ -9,11 +9,11 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Container className={styles.container}>
-        <div>
+        <div className={styles.leftPanel}>
           <Text as="span" className={styles.text} text="Maxfiylik kelishuvi" />
           <Text as="span" className={styles.text} text="Foydalanuvchi kelishuvi" />
         </div>
-        <div>
+        <div className={styles.rightPanel}>
           <Text className={styles.text} as="span" text="2023 Barcha huquqlar himoyalangan" />
         </div>
       </Container>
