@@ -1,12 +1,18 @@
 .homeBanner {
   width: 100%;
   background-color: darkgray;
-  aspect-ratio: 3/1;
+  aspect-ratio: 7/3;
   position: relative;
-  margin-top: 25px;
   border-radius: 15px;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  @media (min-width: 900px) {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    aspect-ratio: 3/1;
+  }
 
   .prevBtn,
   .nextBtn {
@@ -29,9 +35,16 @@
   }
 
   .prevBtn {
-    left: 25px;
+    left: 15px;
+    @media (min-width: 900px) {
+      left: 25px;
+    }
   }
+
   .nextBtn {
-    right: 25px;
+    right: 15px;
+    @media (min-width: 900px) {
+      right: 25px;
+    }
   }
 }
