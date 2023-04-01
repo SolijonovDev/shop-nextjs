@@ -1,0 +1,13 @@
+.breadCrumb {
+  display: flex;
+  align-items: center;
+
+  .separator {
+    margin-right: 5px;
+  }
+
+  .text {
+    font-size: 14px;
+    color: red;
+  }
+}
