@@ -15,7 +15,12 @@ const categories = [
   {
     id: 2,
     categoryName: 'Soatlar',
-    category: 'clock',
+    category: 'watches',
+  },
+  {
+    id: 3,
+    categoryName: 'Bolalar tovarlari',
+    category: 'child-products',
   },
 ];
 

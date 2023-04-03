@@ -14,77 +14,42 @@ const sectionItems = [
   {
     id: 1,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
     id: 2,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
     id: 3,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
     id: 4,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
     id: 5,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
-    id: 1,
+    id: 6,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
-    id: 2,
+    id: 7,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
-    id: 3,
+    id: 8,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
-    id: 4,
+    id: 9,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
   {
-    id: 5,
+    id: 10,
     name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
-  },
-  {
-    id: 1,
-    name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
-  },
-  {
-    id: 2,
-    name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
-  },
-  {
-    id: 3,
-    name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
-  },
-  {
-    id: 4,
-    name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
-  },
-  {
-    id: 5,
-    name: 'iPhone 13',
-    src: '/images/iphone13.jpg',
   },
 ];
 
