@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "classnames": "^2.3.2",
+    "multi-range-slider-react": "^2.0.3",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-number-format": "^5.1.4",
+    "react-range": "^1.8.14",
     "react-use": "^17.4.0",
     "swiper": "^8.4.7"
   },

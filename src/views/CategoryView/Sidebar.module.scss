@@ -38,4 +38,23 @@
       background-color: #e4f4ff;
     }
   }
+
+  .rangePanelTitle {
+    margin-bottom: 15px;
+  }
+
+  .priceRangeTexts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .priceRangeTexts p {
+    border: 1px solid #777;
+    padding: 5px;
+    width: 110px;
+    border-radius: 4px;
+  }
 }
