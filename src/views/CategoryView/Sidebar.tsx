@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import cn from 'classnames';
 
 import { Text } from '@/components/Text';
 import { useRouter } from 'next/router';
@@ -25,10 +26,11 @@ const categories = [
 ];
 
 export const Sidebar: FC = () => {
-  const router = useRouter();
+  const { push, query } = useRouter();
+  const { c: categoryName } = query;
 
   const handleChangeRouter = (categoryName: string) => {
-    router.push({
+    push({
       query: {
         c: categoryName,
       },
@@ -43,7 +45,9 @@ export const Sidebar: FC = () => {
           {categories.map(category => (
             <li key={category.id} className={styles.categoryItem}>
               <button
-                className={styles.categoryItemBtn}
+                className={cn(styles.categoryItemBtn, {
+                  [styles.active]: categoryName === category.category,
+                })}
                 onClick={() => handleChangeRouter(category.category)}
               >
                 {category.categoryName}
