@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
-import cn from 'classnames';
 import { Range, getTrackBackground } from 'react-range';
+import cn from 'classnames';
+import { useRouter } from 'next/router';
 
 import { Text } from '@/components/Text';
-import { useRouter } from 'next/router';
 
 import styles from './Sidebar.module.scss';
 
@@ -26,6 +26,16 @@ const categories = [
   },
   {
     id: 4,
+    categoryName: 'Aksessuarlar',
+    category: 'aksessuary',
+  },
+  {
+    id: 5,
+    categoryName: 'Maishiy texnika',
+    category: 'household-appliances',
+  },
+  {
+    id: 6,
     categoryName: 'Bolalar tovarlari',
     category: 'child-products',
   },
@@ -37,11 +47,7 @@ export const Sidebar: FC = () => {
   const [values, setValues] = React.useState([MIN, MAX]);
 
   const handleChangeRouter = (categoryName: string) => {
-    push({
-      query: {
-        c: categoryName,
-      },
-    });
+    push(`/category/${categoryName}`);
   };
 
   return (

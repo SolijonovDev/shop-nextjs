@@ -205,4 +205,6 @@ export const categoryItems: ICategoryItems = {
   clothes: clothes,
   watches: watches,
   'child-products': childrenProducts,
+  aksessuary: clothes,
+  'household-appliances': books,
 };

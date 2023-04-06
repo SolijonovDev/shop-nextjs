@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 
 export const ContentPanel = () => {
   const { query } = useRouter();
-  const { c: categoryName = 'books' } = query;
+  const { categoryName = 'books' } = query;
   return (
     <div className={styles.contentPanel}>
       <div className={styles.items}>
