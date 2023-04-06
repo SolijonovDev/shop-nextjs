@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import cn from 'classnames';
 
 import { Button } from '@/components/Button';
 import { navItems } from '@/config/nav';
@@ -9,6 +11,7 @@ import styles from './DesktopHeader.module.scss';
 
 export const DesktopHeader = () => {
   const { showSignInPopup } = useSignIn();
+  const { asPath } = useRouter();
 
   return (
     <div className={styles.desktopHeader}>
@@ -20,7 +23,12 @@ export const DesktopHeader = () => {
       <ul className={styles.menu}>
         {navItems.map(({ id, name, pathName }) => (
           <li className={styles.menuItem} key={id}>
-            <Link className={styles.menuItemLink} href={pathName}>
+            <Link
+              className={cn(styles.menuItemLink, {
+                [styles.active]: pathName === asPath,
+              })}
+              href={pathName}
+            >
               {name}
             </Link>
           </li>
