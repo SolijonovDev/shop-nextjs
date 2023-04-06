@@ -43,7 +43,7 @@ const categories = [
 
 export const Sidebar: FC = () => {
   const { push, query } = useRouter();
-  const { c: categoryName } = query;
+  const { categoryName } = query;
   const [values, setValues] = React.useState([MIN, MAX]);
 
   const handleChangeRouter = (categoryName: string) => {
